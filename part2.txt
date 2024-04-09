@@ -1,1 +1,13 @@
 Fill in the passphrases here.
+1. "greenEggsAndHam" (commented in html)
+2. "iHateCplusplus" (title name)
+3. "HTMLRocks" (p hidden)
+4. "JavaScriptRules" (question-four)
+5. "SvelteBeatsReact" (span)
+6. "ThisIsJS" (comment in javascript)
+7. "YouFoundMe"(console.log)
+8. "coolcoolcool" (commented in style)
+9. "2020sucked" (h2)
+10. "listenToTheBlackKeys" (image fetched in JS file)
+11. "allyComesFirst" (meta name)
+12. "iLoveWebDev (in div)
