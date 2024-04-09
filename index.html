@@ -18,11 +18,9 @@
     <section id="logistics">
         <p>Attendance</p>
         <ul>
-            <li>Pooja</li>
             <li>Shilpa</li>
             <li>Mom</li>
             <li>Dad</li>
-            <li>Divya</li>
         </ul>
         
         <p> Agenda </p>
@@ -80,11 +78,37 @@
         This is a summary of our project tasks in GitHub:
         <img src="project-tasks.jpg" alt="Project Tasks">
 
-        <h4>Add a Task:</h4>
+        <hr>
+
+        <h4>Add a Task:</h4> 
         <form id="add-task">
-            <input type="text" placeholder="description">
+            <input type="text" placeholder="description"> <br>
+            
+            <p>Is it pending or new?</p>
+            <label>
+                <input type="radio" name="pending" value="pending"> Pending
+            </label> 
+            <label>
+                <input type="radio" name="new" value="new"> New
+            </label>             
+            
+            <p>When should it be completed by?</p>
+            <input type="date" value="description"> <br>
+            
+            <p>Who is responsible for the task?</p>
+            <label>
+                <input type="checkbox" name="mom" value="mom"> Mom
+            </label>
+            <label>
+                <input type="checkbox" name="dad" value="dad"> Dad
+            </label>
+            <label>
+                <input type="checkbox" name="shilpa" value="shilpa"> Shilpa
+            </label> 
+            <br><br>
             <button type="submit">Add Task</button>
-        </form>        
+        </form>
+        <!--checkbox, radio, text, and date-->        
     </section>
 </body>
 </html>
