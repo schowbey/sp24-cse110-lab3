@@ -1,5 +1,5 @@
 ---
-name: Issue Template
+name: Template
 about: "~ use when creating a new issue"
 title: ''
 labels: needs attention
@@ -7,8 +7,7 @@ assignees: schowbey
 
 ---
 
-# Issue Title
-### Due Date: 
+## Due Date: 
 Issue Description: 
 Tasks
 - [ ] Item 1
