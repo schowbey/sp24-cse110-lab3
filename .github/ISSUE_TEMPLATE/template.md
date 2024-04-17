@@ -1,6 +1,6 @@
 ---
 name: Template
-about: "~ use when creating a new issue"
+about: "use when creating a new issue :)"
 title: ''
 labels: needs attention
 assignees: schowbey
