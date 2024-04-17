@@ -45,11 +45,10 @@ img.screenshots{
     border-style: solid;
     border-color: black;
     border-width: 1.5px;
-    
-}
-/*nested selectors (this is the only format that would pass the CSS validater)*/
-#task-form .inputs{
-    border-width: .5px;
+    /*nested selectors*/
+    & .inputs{
+        border-width: .5px;
+    }
 }
 .video{
     min-width: 200px;
