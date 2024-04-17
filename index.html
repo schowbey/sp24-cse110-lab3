@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab 2 - CSE 110</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -18,7 +22,7 @@
     <section id="logistics">
         <p>Attendance</p>
         <ul>
-            <li>Shilpa</li>
+            <li><a href="https://github.com/schowbey?tab=repositories">Shilpa</a></li>
             <li>Mom</li>
             <li>Dad</li>
         </ul>
@@ -40,24 +44,29 @@
         <audio src="lab2-audio.m4a" controls>
             Your browser does not support the audio element.
         </audio>
-        
-        <p>Miscellaenous Notes</p>
-        <ul>
-            <li>Need more time on website.</li>
-            <li><em>What is the team budget?</em></li>
-            <li>Potentially need to pivot ideas.</li>
-        </ul>
-        
-        <p>This video shows the code we're using for today's meeting.</p>
-        <video src="lab2-video.MOV">
-            Your browser does not support the video element.
-        </video>
-        
+        <div class="grid-container">
+            <div>
+                <p>Miscellaenous Notes</p>
+                <ul style="line-height: 3rem;">
+                    <li>Need more time on website.</li>
+                    <li><em>What is the team budget?</em></li>
+                    <li>Potentially need to pivot ideas.</li>
+                </ul>
+            </div>
+            <div>
+                <p>This video shows the code we're using for today's meeting.</p>
+                <video src="lab2-video.MOV" class="video">
+                    Your browser does not support the video element.
+                </video>
+            </div>
+               
+        </div>
     </section>
 
     <hr>
     
     <section id="tasks">
+        <p>This is a summary of our project tasks in GitHub:</p>
         <details>
             <summary>Pending Tasks</summary>
             <ul>
@@ -75,40 +84,40 @@
             </ul>
         </details>
 
-        This is a summary of our project tasks in GitHub:
-        <img src="project-tasks.jpg" alt="Project Tasks">
+        <img src="project-tasks.jpg" alt="Project Tasks" class="screenshots">
 
         <hr>
-
-        <h4>Add a Task:</h4> 
-        <form id="add-task">
-            <input type="text" placeholder="description"> <br>
-            
-            <p>Is it pending or new?</p>
-            <label>
-                <input type="radio" name="pending" value="pending"> Pending
-            </label> 
-            <label>
-                <input type="radio" name="new" value="new"> New
-            </label>             
-            
-            <p>When should it be completed by?</p>
-            <input type="date" value="description"> <br>
-            
-            <p>Who is responsible for the task?</p>
-            <label>
-                <input type="checkbox" name="mom" value="mom"> Mom
-            </label>
-            <label>
-                <input type="checkbox" name="dad" value="dad"> Dad
-            </label>
-            <label>
-                <input type="checkbox" name="shilpa" value="shilpa"> Shilpa
-            </label> 
-            <br><br>
-            <button type="submit">Add Task</button>
-        </form>
-        <!--checkbox, radio, text, and date-->        
+        <div id="task-form">
+            <h4>Add a Task:</h4> 
+        
+            <div class="flex-container"><form id="add-task">
+                <input type="text" placeholder="description" class="inputs"> <br>
+                
+                <p>Is it pending or new?</p>
+                <label>
+                    <input type="radio" name="pending" value="pending"> Pending
+                </label> 
+                <label>
+                    <input type="radio" name="new" value="new"> New
+                </label>             
+                
+                <p>When should it be completed by?</p>
+                <input type="date" value="description" class="inputs"> <br>
+                
+                <p>Who is responsible for the task?</p>
+                <label>
+                    <input type="checkbox" name="mom" value="mom"> Mom
+                </label>
+                <label>
+                    <input type="checkbox" name="dad" value="dad"> Dad
+                </label>
+                <label>
+                    <input type="checkbox" name="shilpa" value="shilpa"> Shilpa
+                </label> 
+                <br><br>
+                <button type="submit" class="submit-btn">Add Task</button>
+            </form> </div>
+        </div>
     </section>
 </body>
 </html>

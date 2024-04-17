@@ -1,0 +1,124 @@
+:root {
+    --primary-color: rgb(228, 236, 219);
+}
+/*universal selector*/
+*{
+    background-color: var(--primary-color, #ffffff); /*use CSS variable with fallback*/
+}
+body{
+    font-family: "Open Sans"; /*from fonts.google, linked in HTML header*/
+    padding: 3% 5%; /*relative sizing, shorthand padding*/
+}
+h1, h2, h3{
+    font-family: "Raleway"; /*from fonts.google, linked in HTML header*/
+}
+/*element selector*/
+h4{
+    text-decoration: underline;
+}
+summary{
+    /*longhand margin*/
+    margin-top: 0%;
+    margin-bottom: 2%;
+    margin-left: 5%;
+    margin-right: 0%;
+}
+label{
+    /*shorthand margin*/
+    margin: 1% 1%;
+}
+/*combining two selectors*/
+img.screenshots{
+    position: static;
+    width: 500px; /*absolute sizing*/
+    height: auto;
+    display: inline-block;
+}
+
+/*id selector*/
+#task-form {
+    display: block;
+    position: relative;
+    text-align: center;
+    margin: auto;
+    border-style: solid;
+    border-color: black;
+    border-width: 1.5px;
+    /*nested selectors*/
+    .inputs{
+        border-width: .5px;
+    }
+}
+.video{
+    min-width: 200px;
+    max-width: 400px;
+}
+.submit-btn{
+    background-color: black;
+    color: white; /*text color*/
+    border-radius: 8px;
+    font-family: "Raleway";
+    /*longhand padding*/
+    padding-top: .5%;
+    padding-bottom: .5%;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-bottom: 2%;
+}
+.submit-btn:hover{
+    background-color: white;
+    color: black;
+}
+/*flex box*/
+.flex-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    row-gap: 2%;
+}
+/*descendant combinator selector*/
+#notes audio {
+    width: 100%;
+}
+/*attribute selector*/
+input[type="text"] {
+    font-family: "Open Sans";
+    padding: .5%;
+}
+/*.has() selectors*/
+ul li:has(a) {
+    color: blue;
+}
+/*child combinator*/
+#notes > p {
+    color: #A76967;
+    text-shadow: 1px 1px 0 pink, 1px 1px 0 pink, 1px 1px 0 pink;
+}
+/*general sibling combinator*/
+#task-form input ~ p {
+    color: darkgoldenrod;
+}
+/*adjacent sibling combinator (element + element)*/
+h3 + h4{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+/*screen-width query for smaller screens*/
+@media screen and (max-width: 100px) {
+    /*grid*/
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        grid-column-gap: 20px;
+    }
+}
+
+/*screen-width query for smaller screens*/
+@media screen and (max-width: 500px) {
+    img.screenshots{
+        width: 300px;
+    }
+}
