@@ -46,7 +46,7 @@ img.screenshots{
     border-color: black;
     border-width: 1.5px;
     /*nested selectors*/
-    input{
+    & .inputs{
         border-width: 1px;
     }
 }
