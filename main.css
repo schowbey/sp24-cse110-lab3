@@ -26,7 +26,7 @@ summary{
 }
 label{
     /*shorthand margin*/
-    margin: 1% 1%;
+    margin: 1% 1% 1% 1%;
 }
 /*combining two selectors*/
 img.screenshots{
