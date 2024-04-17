@@ -54,7 +54,7 @@ img.screenshots{
     max-width: 400px;
 }
 .submit-btn{
-    background-color: black;
+    background-color: hsl(0, 0%, 0%);
     color: white; /*text color*/
     border-radius: 8px;
     font-family: "Raleway";
@@ -66,8 +66,8 @@ img.screenshots{
     margin-bottom: 2%;
 }
 .submit-btn:hover{
-    background-color: white;
-    color: black;
+    background-color: color(display-p3 1 1);
+    color: color-mix(multiply, white 0, white 0);
 }
 /*flex box*/
 .flex-container{
