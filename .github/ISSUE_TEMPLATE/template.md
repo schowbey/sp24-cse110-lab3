@@ -8,8 +8,8 @@ assignees: schowbey
 ---
 
 ## Due Date: 
-Issue Description: 
-Tasks
+*Issue Description*: 
+#### Tasks
 - [ ] Item 1
 - [x] Item 2
 - [ ] Item 3
